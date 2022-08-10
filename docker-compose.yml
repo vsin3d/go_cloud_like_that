@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  backend-node-app:
+    image: node-backend
+    environment:
+      - PORT=6569
+    ports:
+      - "3636:6569"
+  frontend-web-app:
+    image: frontend-react
+    ports:
+      - "3000:3000"
